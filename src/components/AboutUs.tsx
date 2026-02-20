@@ -18,7 +18,7 @@ export default function AboutUs() {
             Our Story
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">
-            As Featured In The Press
+            Our History
           </h2>
         </div>
 
