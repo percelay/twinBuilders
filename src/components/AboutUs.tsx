@@ -196,7 +196,7 @@ export default function AboutUs() {
                   {!photoError ? (
                     <div className="relative w-full aspect-[3/4]">
                       <Image
-                        src="/images/aboutUsPhoto.jpeg"
+                        src="/images/aboutUsPhoto.png"
                         alt="Shawn and Scott Lignore of Twin Builders"
                         fill
                         className="object-cover"
@@ -290,7 +290,7 @@ export default function AboutUs() {
             {!newspaperError ? (
               <div className="relative w-full" style={{ aspectRatio: "8.5/11" }}>
                 <Image
-                  src="/images/newspaper.jpeg"
+                  src="/images/newspaper.png"
                   alt="Original Twin Builders newspaper article from The Carbon County Postscript"
                   fill
                   className="object-contain"
