@@ -170,19 +170,19 @@ export default function Specifications() {
   };
 
   return (
-    <section id="specifications" className="py-32 bg-primary">
+    <section id="specifications" className="py-20 bg-primary">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="mb-16 border-b border-white/15 pb-8">
+        <div className="mb-10 border-b border-white/15 pb-8">
           <p className="font-body text-[10px] uppercase tracking-[0.4em] text-accent mb-3">
             What&apos;s Included
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white">
             Building Specifications
           </h2>
-          <p className="font-body text-sm text-white/50 mt-4 max-w-xl leading-relaxed">
+          <p className="font-body text-sm text-white/50 mt-3 max-w-xl leading-relaxed">
             Every Twin Builders home is constructed to these standards. Owners may upgrade any
-            package items at an additional cost of material and labor.
+            package items at an additional cost.
           </p>
         </div>
 
@@ -192,14 +192,14 @@ export default function Specifications() {
             <div key={spec.title}>
               <button
                 onClick={() => toggle(index)}
-                className="w-full flex items-center justify-between py-5 text-left group transition-colors duration-300"
+                className="w-full flex items-center justify-between py-3 text-left group transition-colors duration-300"
                 aria-expanded={openIndex === index}
               >
-                <span className="font-display text-base md:text-lg text-white/90 group-hover:text-white transition-colors duration-500">
+                <span className="font-body text-sm font-semibold text-white/80 group-hover:text-white transition-colors duration-500 uppercase tracking-[0.12em]">
                   {spec.title}
                 </span>
                 <ChevronDown
-                  size={16}
+                  size={14}
                   className={`shrink-0 ml-4 text-white/30 transition-all duration-500 ${
                     openIndex === index ? "rotate-180 text-accent" : "group-hover:text-white/60"
                   }`}
@@ -209,16 +209,14 @@ export default function Specifications() {
               {/* Collapsible content */}
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  openIndex === index ? "max-h-[800px] pb-7" : "max-h-0"
+                  openIndex === index ? "max-h-[600px] pb-5" : "max-h-0"
                 }`}
               >
-                <ul className="space-y-2.5 pl-2">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-1.5 pl-1 pb-1">
                   {spec.items.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <span className="text-accent text-sm mt-0.5 shrink-0 leading-relaxed">
-                        —
-                      </span>
-                      <span className="font-body text-sm text-white/65 leading-relaxed">
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-accent text-xs mt-0.5 shrink-0">—</span>
+                      <span className="font-body text-xs text-white/60 leading-snug">
                         {item}
                       </span>
                     </li>
@@ -230,13 +228,12 @@ export default function Specifications() {
         </div>
 
         {/* Disclaimer */}
-        <div className="mt-14 pt-10 border-t border-white/15">
-          <p className="font-body text-xs text-white/35 leading-loose max-w-3xl">
-            <strong className="text-white/55 font-semibold">Disclaimer: </strong>
-            Owner may feel free to upgrade any of our package items at an additional cost of
-            material and labor. Any changes or alterations done to the house after start of
-            construction will be additional charges to the Homeowner. Twin Builders are not
-            responsible for painting exterior doors.
+        <div className="mt-8 pt-6 border-t border-white/15">
+          <p className="font-body text-xs text-white/30 leading-relaxed max-w-3xl">
+            <strong className="text-white/50 font-semibold">Disclaimer: </strong>
+            Owner may feel free to upgrade any package items at an additional cost of material
+            and labor. Any changes or alterations after start of construction will be additional
+            charges to the Homeowner.
           </p>
         </div>
       </div>

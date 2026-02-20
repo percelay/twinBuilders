@@ -12,8 +12,8 @@ type Model = {
   description: string;
   featureDescription: string;
   contact?: string;
-  image: string;
-  floorplan: string;
+  image: string | null;
+  floorplan: string | null;
 };
 
 const models: Model[] = [
@@ -27,8 +27,8 @@ const models: Model[] = [
     featureDescription:
       "Loads of storage space, including two walk-in closets on the second floor. Two entry ways from an expansive wrap-around patio deck, including French door at living room, additional deck at rear of living room and a balcony with sliding glass door off of master bedroom.",
     contact: "twinbldr@ptd.net | (570) 722-9282",
-    image: "/images/chalet.jpeg",
-    floorplan: "/images/chalet-floorplan.jpeg",
+    image: "/images/chaletpic.webp",
+    floorplan: "/images/chaletfloorplan.webp",
   },
   {
     id: "pocono",
@@ -39,8 +39,8 @@ const models: Model[] = [
       "Three spacious bedrooms and two full baths give this model roughly 1,700 square feet of functional space spread over three levels. The loft and stairway overlook the living room with cathedral ceilings.",
     featureDescription:
       "With a fireplace, separate entrance, and the potential to add a third bedroom, the open basement area is extremely versatile.",
-    image: "/images/pocono.jpeg",
-    floorplan: "/images/pocono-floorplan.jpeg",
+    image: "/images/pocongarageopic.webp",
+    floorplan: "/images/poconogarageplan.webp",
   },
   {
     id: "garbo",
@@ -51,8 +51,8 @@ const models: Model[] = [
       "Three spacious bedrooms and three full baths give this model nearly 2,500 square feet of living space on two floors. The fireplace and open second-floor loft add to its rustic charm. Lighted ceiling fans in all bedrooms, kitchen, living room, dining room and family room.",
     featureDescription:
       "The garage adds another 440 square feet of functionality and the porch stretches across the entire front. Three direct entry ways plus garage access and washer/dryer hook-ups on the first floor in a separate laundry room.",
-    image: "/images/garbo.jpeg",
-    floorplan: "/images/garbo-floorplan.jpeg",
+    image: "/images/garbopic.webp",
+    floorplan: "/images/garboplan.webp",
   },
   {
     id: "hideaway",
@@ -63,8 +63,8 @@ const models: Model[] = [
       "Three bedrooms and two full baths between its two levels give this model 1,480 square feet of living space. Washer/Dryer hook-ups on the first floor, ceiling fans in all bedrooms and from cathedral ceiling above living room.",
     featureDescription:
       "Its rustic features include a loft, a fireplace and two entry ways from a wrap-around patio deck, including a sliding glass door at the living room.",
-    image: "/images/hideaway.jpeg",
-    floorplan: "/images/hideaway-floorplan.jpeg",
+    image: null,
+    floorplan: null,
   },
   {
     id: "hilltop",
@@ -75,8 +75,8 @@ const models: Model[] = [
       "Three spacious bedrooms and two bathrooms fill more than 1,150 square feet of living space on the main floor. This model has four entry ways — one through the garage, another through the basement plus two via the deck.",
     featureDescription:
       "The fireplace, attic space and enclosed all-weather porch add to the functionality of this model. The lower level adds the convenience of a basement and attached garage.",
-    image: "/images/hilltop.jpeg",
-    floorplan: "/images/hilltop-floorplan.jpeg",
+    image: null,
+    floorplan: null,
   },
 ];
 
@@ -92,6 +92,7 @@ function FallbackPhoto({ label }: { label: string }) {
 
 function ModelCard({ model, onClick }: { model: Model; onClick: () => void }) {
   const [imgError, setImgError] = useState(false);
+  const hasImage = model.image && !imgError;
 
   return (
     <button
@@ -100,9 +101,9 @@ function ModelCard({ model, onClick }: { model: Model; onClick: () => void }) {
     >
       {/* Thumbnail */}
       <div className="relative w-full overflow-hidden bg-surface" style={{ aspectRatio: "4/3" }}>
-        {!imgError ? (
+        {hasImage ? (
           <Image
-            src={model.image}
+            src={model.image!}
             alt={`${model.name} — Twin Builders`}
             fill
             className="object-cover transition-all duration-700 group-hover:scale-105"
@@ -112,7 +113,6 @@ function ModelCard({ model, onClick }: { model: Model; onClick: () => void }) {
           <FallbackPhoto label={`${model.name} — Photo Coming Soon`} />
         )}
 
-        {/* Hover reveal */}
         <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/30 transition-all duration-700" />
         <div className="absolute bottom-0 right-0 px-3 py-1.5 bg-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <span className="font-body text-[9px] font-bold uppercase tracking-[0.2em] text-text-main flex items-center gap-1">
@@ -141,6 +141,9 @@ function ModelModal({ model, onClose }: { model: Model; onClose: () => void }) {
   const [imgError, setImgError] = useState(false);
   const [fpError, setFpError] = useState(false);
 
+  const showPhoto = model.image && !imgError;
+  const showFloorplan = model.floorplan && !fpError;
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto"
@@ -151,7 +154,7 @@ function ModelModal({ model, onClose }: { model: Model; onClose: () => void }) {
         className="relative bg-bg max-w-5xl w-full my-8 border border-primary/30 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Modal Header */}
+        {/* Header */}
         <div className="flex items-start justify-between p-6 md:p-8 border-b border-primary/20">
           <div>
             <p className="font-body text-[9px] uppercase tracking-[0.3em] text-text-muted mb-1.5">
@@ -170,12 +173,13 @@ function ModelModal({ model, onClose }: { model: Model; onClose: () => void }) {
           </button>
         </div>
 
-        {/* Images — 50/50 */}
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        {/* Top row: exterior photo + description */}
+        <div className="grid grid-cols-1 md:grid-cols-2 border-b border-primary/20">
+          {/* Exterior photo */}
           <div className="relative bg-surface" style={{ aspectRatio: "4/3" }}>
-            {!imgError ? (
+            {showPhoto ? (
               <Image
-                src={model.image}
+                src={model.image!}
                 alt={`${model.name} exterior`}
                 fill
                 className="object-cover"
@@ -191,20 +195,42 @@ function ModelModal({ model, onClose }: { model: Model; onClose: () => void }) {
             </div>
           </div>
 
-          <div
-            className="relative bg-surface border-t md:border-t-0 md:border-l border-primary/20"
-            style={{ aspectRatio: "4/3" }}
-          >
-            {!fpError ? (
+          {/* Description */}
+          <div className="p-6 md:p-8 border-t md:border-t-0 md:border-l border-primary/20 flex flex-col justify-between">
+            <div>
+              <p className="font-body text-sm text-text-main leading-relaxed mb-6">
+                {model.description}
+              </p>
+              <p className="font-body text-[9px] uppercase tracking-[0.25em] text-accent font-bold mb-2">
+                {model.feature}
+              </p>
+              <p className="font-body text-sm text-text-main leading-relaxed">
+                {model.featureDescription}
+              </p>
+            </div>
+
+            {model.contact && (
+              <p className="font-body text-xs text-text-muted mt-6 pt-5 border-t border-primary/15">
+                Questions?{" "}
+                <span className="text-primary font-medium">{model.contact}</span>
+              </p>
+            )}
+          </div>
+        </div>
+
+        {/* Floor plan — full width, landscape */}
+        <div className="border-b border-primary/20">
+          <div className="relative bg-surface w-full" style={{ aspectRatio: "16/7" }}>
+            {showFloorplan ? (
               <Image
-                src={model.floorplan}
+                src={model.floorplan!}
                 alt={`${model.name} floor plan`}
                 fill
-                className="object-contain p-4"
+                className="object-contain py-4 px-6"
                 onError={() => setFpError(true)}
               />
             ) : (
-              <FallbackPhoto label="Floor Plan" />
+              <FallbackPhoto label="Floor Plan — Coming Soon" />
             )}
             <div className="absolute bottom-0 left-0 bg-primary/80 px-3 py-1.5">
               <span className="font-body text-[9px] uppercase tracking-[0.2em] text-white">
@@ -214,47 +240,22 @@ function ModelModal({ model, onClose }: { model: Model; onClose: () => void }) {
           </div>
         </div>
 
-        {/* Description */}
-        <div className="p-6 md:p-8 border-t border-primary/20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <p className="font-body text-sm text-text-main leading-relaxed">
-                {model.description}
-              </p>
-            </div>
-            <div>
-              <p className="font-body text-[9px] uppercase tracking-[0.25em] text-accent font-bold mb-2">
-                {model.feature}
-              </p>
-              <p className="font-body text-sm text-text-main leading-relaxed">
-                {model.featureDescription}
-              </p>
-            </div>
-          </div>
-
-          {model.contact && (
-            <p className="font-body text-xs text-text-muted mt-6 pt-6 border-t border-primary/15">
-              Questions about this model?{" "}
-              <span className="text-primary font-medium">{model.contact}</span>
-            </p>
-          )}
-
-          <div className="flex flex-wrap gap-4 mt-6">
-            <a
-              href="#contact"
-              onClick={onClose}
-              className="inline-flex items-center gap-2 px-7 py-3 bg-accent text-text-main font-body text-xs font-bold uppercase tracking-[0.2em] transition-opacity duration-500 hover:opacity-80"
-            >
-              Request a Quote
-              <ArrowRight size={12} />
-            </a>
-            <button
-              onClick={onClose}
-              className="inline-flex items-center px-7 py-3 border border-primary/30 text-text-muted font-body text-xs uppercase tracking-[0.2em] transition-colors duration-500 hover:border-primary hover:text-primary"
-            >
-              Back to Portfolio
-            </button>
-          </div>
+        {/* Footer actions */}
+        <div className="p-6 md:p-8 flex flex-wrap gap-4">
+          <a
+            href="#contact"
+            onClick={onClose}
+            className="inline-flex items-center gap-2 px-7 py-3 bg-accent text-text-main font-body text-xs font-bold uppercase tracking-[0.2em] transition-opacity duration-500 hover:opacity-80"
+          >
+            Request a Quote
+            <ArrowRight size={12} />
+          </a>
+          <button
+            onClick={onClose}
+            className="inline-flex items-center px-7 py-3 border border-primary/30 text-text-muted font-body text-xs uppercase tracking-[0.2em] transition-colors duration-500 hover:border-primary hover:text-primary"
+          >
+            Back to Portfolio
+          </button>
         </div>
       </div>
     </div>
@@ -267,7 +268,6 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-32 bg-surface">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        {/* Header */}
         <div className="mb-16 border-b border-primary/20 pb-8">
           <p className="font-body text-[10px] uppercase tracking-[0.4em] text-text-muted mb-3">
             Our Builds
@@ -281,7 +281,6 @@ export default function Portfolio() {
           </p>
         </div>
 
-        {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-primary/10">
           {models.map((model) => (
             <div key={model.id} className="bg-surface">
