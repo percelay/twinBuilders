@@ -1,0 +1,223 @@
+# TWIN BUILDERS - WEBSITE CONTENT SOURCE MATERIAL
+
+## GLOBAL SITE INFO
+Company Name: Twin Builders
+Niche: Custom Homes
+Main Call to Action: Call for a free quote
+
+--------------------------------------------------
+
+## SECTION 1: HERO
+Headline: Twin Builders
+Sub-Headline: Custom homes. Call for a free quote.
+Imagery Notes: Classic landing page with a 'hero' photo.
+
+--------------------------------------------------
+
+## SECTION 2: ABOUT US (The Newspaper Feature)
+Design Notes: Needs to look like a traditional (old) newspaper page. Include a little thing that says 'check out the original paper!' which pulls up the photo (called 'newspaper' in public/images). The main photo on the page will be 'aboutUsPhoto' in public/images.
+
+Article Title: Twin Builders make dreams come true
+Author: By Elsa Kerschner, Postscript coordinator
+
+Article Body:
+Twin Builders, Albrightsville, is building dreams for people with the well constructed houses they are becoming known for. The twins of Twin Builders are Shawn and Scott Lignore.
+
+The boys tested so high in mechanical ability at school that their parents were called. Consequently, when they attended the Carbon County Vo-Tech school they enrolled in carpentry for Shawn and plumbing for Scott. Upon graduation they stepped into waiting construction jobs. By 1989 they felt they were ready to step out on their own and asked their father for advice.
+
+Money was raised to buy land to build a house. The house was sold before it was completed. That profit went into the next house and the fledgling business quickly expanded.
+
+Parents Lee, office manager, and Rich, helper and advice-giver, are still involved in the business but expect to leave the twins on their own when Rich retires. Other family members also get credit for helping out such as sister Nicole Quavado who takes over the office when her parents go on vacation.
+
+Commendations line the walls of the Route 903 office: "Thanks for getting things done ahead of schedule"; from a construction engineer, "Doing business with Twin Builders and watching our house take form has been a true pleasure"; from an architect, "I believe I can recognize the qualities of a good builder"; and "The entire family and staff made us feel welcome no matter what time of day we contacted you."
+
+Especially pleasing to Lee is the fact that she holds keys to many of the residences Twin Builders have built so she can show them to potential customers. People for whom they have built houses return to ask for expansions or garages which says a lot for the quality of the original work. They will also call for recommendations for painters or people to do masonry work, putting their trust in Twin Builders.
+
+"We have a good rapporte with suppliers," Lee says, which makes finishing jobs on time easier.
+
+Twin Builders have a set of standard floor plans used as a basis for customizing. Wider windows or doors and extensions customize each house. "Chalets are popular right now as both primary and secondary homes," Lee says.
+
+Twin Builders in not like a big business. "I show them the homes and if they are interested they talk with my sons. Our motto is 'The hand you shake is the hand that builds.' When I show a house the quality of the work sells the customer on Twin Builders."
+
+Anyone signing a contract at this time will receive a free appliance package.
+
+The family is proud that the company received the contract to build the rectory at St. Peter the Fisherman Catholic Church at Lake Hermany.
+
+"We cater to people. You have to treat them with respect. We respected our sons and taught them to pass it on," Lee says.
+
+In turn, they are passing respect for people on to their customers. For information call 717-722-9282 or 722-0496; or stop in the office 1 1/2 miles from the route 534 and 903 junction going toward Jim Thorpe.
+
+--------------------------------------------------
+
+## SECTION 3: BUILD PORTFOLIO
+Design Notes: Each build will have 2 photos (e.g., 1 called 'chalet', 1 called 'floor plan'). Use the house photo as the thumbnail, and both the house + floor plan photos when clicked into the modal/detail view.
+
+### Model 1: The Chalet
+Specs: Nearly 2600 square feet
+Description: With a great room, family room, loft, plus three bedrooms and two full baths plus a half bath this model boasts nearly 2600 sq. ft. of living space. This Chalet also features a fireplace AND a spiral staircase!
+Feature: Spacious!
+Feature Description: Loads of storage space, including two walk-in closets on the second floor, Two entry ways from an expansive wrap-around patio deck, including French door at living room, additional deck at rear of living room and a balcony with sliding glass door off of master bedroom.
+Contact Prompt: Have a question about The Chalet? Contact us today by email or give us a call! Email: twinbldr@ptd.net | Ph: 570-722-9282
+
+### Model 2: The Pocono Chalet with Basement
+Specs: Roughly 1,700 square feet
+Description: Three spacious bedrooms and two full baths give this model roughly 1,700 square feet of functional space spread over three levels. The loft and stairway overlook the living room with cathedral ceilings.
+Feature: Versatile, open basement area
+Feature Description: With a fireplace, separate entrance, and the potential to add a third bedroom, the open basement area is extremely versatile.
+
+### Model 3: The Garbo
+Specs: Nearly 2,500 square feet of living space
+Description: Three spacious bedrooms, and three full baths give this model nearly 2,500 square feet of living space on two floors. The fireplace and open second-floor loft add to it's rustic charm. This home also has lighted ceiling fans in all bedrooms, kitchen, living room, dining room and family room.
+Feature: Garage and large porch
+Feature Description: The garage adds another 440 square feet of functionality and its porch stretches across the entire front. This home also has three direct entry ways plus garage access and washer/dryer hook-ups on the first floor in a separate laundry room.
+
+### Model 4: The Hideaway
+Specs: 1,480 Square Feet of Living Space
+Description: Three bedrooms and two full baths between its two levels give this model 1,480 square feet of living space. Washer/Dryer hook-ups on the first floor, ceiling fans in all bedrooms and from cathedral ceiling above living room.
+Feature: Loft, Fireplace & Wrap-around patio deck
+Feature Description: Its rustic features include a loft, a fireplace and two entry ways from a wrap-around patio deck, including a sliding glass door at the living room.
+
+### Model 5: The Hilltop with Basement & Garage
+Specs: 1,150 square feet
+Description: Three spacious bedrooms and two bathrooms help fill more than 1,150 square feet of living space on the main floor. This model has four entry ways- one through the garage, another through the basement plus two via the deck.
+Feature: Added functionality
+Feature Description: The fireplace, attic space and enclosed all-weather porch add to the functionality of this model. In addition, the lower level adds the convenience of a basement and attached garage.
+
+--------------------------------------------------
+
+## SECTION 4: VIDEOS (Past Projects)
+Video 1: https://www.facebook.com/TwinBuilders2/videos/671275351757992
+Video 2: https://www.facebook.com/TwinBuilders2/videos/616671333183753
+
+--------------------------------------------------
+
+## SECTION 5: BUILDING SPECIFICATIONS
+Title: Twin Builders Building Specifications
+
+SITE PREPARATION:
+- Remove all necessary trees and stumps for driveway, foundation area, 15’ around home and clearing for septic and well.
+- Any other trees cut more than the allowed area is at Homeowner’s expense.
+- Excavate land for foundation, back-fill and grade with existing material/dozer finished. No landscaping.
+- ANY SETTLING AROUND PROPERTY AFTER C/O IS ISSUED WILL BE HOMEOWNERS RESPONSIBILITY.
+- Driveway to be 50 x 15 with 1 course of rip-rap or equivalent, and 1 course of 2b stone.
+
+WELL AND SEPTIC ALLOWANCES:
+- Well allowance – 250 ft. drilling with 50 ft. casing.
+- 800 sq. ft. Septic System.
+- Allowance price for septic system and access road is $10,500.00. Additional costs will be paid by Homeowner.
+- **ANYTHING THAT GOES OVER OUR ALLOWANCE WILL BE AN ADDITIONAL COST TO THE HOMEOWNER**
+- Contractor recommends that homeowner buy and run a dehumidifier in basement or crawl space for the first full year, to reduce the humidity.
+
+CRAWL SPACE AS FOLLOWS:
+- XI Superior Walls.
+- Crawl space floor shall have a moisture barrier over crushed stone base with 2” concrete floor.
+- Anchor bolts shall be set in top course every 4’.
+- Treated sill plates shall be firmly secured to foundation by anchor bolts with fiberglass sill seal.
+- Sub-pump in crawl space and/or perimeter drain.
+- One (1) Sub-pump supplied by builder if needed, It is owners responsibility to maintain and make sure the pump functioning properly.
+- Bilco door entry.
+
+FULL BASEMENT:
+- XI Plus Superior walls.
+- R-21 wall insulation.
+- Two (2) anchor bolts shall be set every 4’ side by side.
+- Treated sill plates shall be firmly secured by anchor bolts with fiberglass sill seal.
+- Perimeter drain to daylight or sub-pump.
+- One (1) Sub-pump if needed will be supplied by builder. It is the responsibility of the Homeowner to maintain and make sure pump is working properly.
+
+FRAMING:
+- All lumber to be kiln dried at construction grade.
+- All exterior wall framing to be 2 x 6 16” O.C.
+- Interior walls to be 2 x 4 16” O.C.
+- Floor joists to be 2 x 10 16” O.C.
+- Roof rafters to be 2 x 8 16” O.C in flat ceiling area and 2 x12 in cathedral ceiling.
+- Flooring shall be 3/4 Advantech nailed, screwed and glued.
+- Roof sheathing and exterior wall to be 7/16 OSB covered with synthetic felt and 25yr warranty shingles, ice and water shield on first 3’ of roof.
+- All exterior box joists will be pressure treated lumber for crawl space application.
+- National Shelter House wrap to be used for house wrap.
+- Ridge and soffit vents installed.
+- Mastic Ovation or Summit Manor Vinyl siding on exterior walls-See Blue Prints.
+
+INSULATION:
+- All exterior walls will have R-21 insulation, R-30 in box joist in crawl space, R-49 in cathedral ceilings and R-49 in flat ceilings (all with proper vents and vapor barrier).
+
+PLUMBING:
+- 50 Gallon hot water heater installed in utility room, crawl space or basement.
+- Two (2) hose-bibs with frost free spigots.
+- Faucets. (Moen brand)
+- Water saving toilets with shut off valves.
+- Vanity and vanity tops to be cultured marble in bathrooms with shut off valves.
+- Fiber glass one piece tub/shower.
+- Light with exhaust fan in all bathrooms.
+- Medicine cabinet with mirror and light bar.
+- All water supply lines to be ¾” Pex tubing with feeder lines to be 1/2” Pex tubing with shut off valves.
+- Washer/dryer hook-up.
+- All plumbing to meet or exceed code.
+
+KITCHEN:
+- “Woodstar” cabinets (6 choices of wood color, white is additional cost).
+- Formica counter top with 4” or full Back Splash.
+- Stainless steel sink - single or double bowl, your choice.
+- Electric range, microwave hood, dishwasher, and 18 cubic ft. Refrigerator.
+
+INTERIOR:
+- 1/2” Sheetrock screwed, glued, taped, spackled and sanded with a smooth finish.
+- Water proof sheetrock in bathroom.
+- Paint walls all one color (flat white).
+- Passage doors to be flush birch or white 6 panel doors.
+- All entry doors to be Stanley Steel or equivalent (Twin Builders are not responsible for painting exterior doors).
+- All closets to have a minimum of one (1) shelf and pole with bi-fold flush door.
+- All trim to be colonial or ranch casing, stain grade your choice of color.
+
+FLOORING:
+- Wall to wall carpet, 7/16” top bond padding with Plush, felt with Berber.
+- No wax vinyl flooring in kitchen and bath.
+
+ELECTRICAL:
+- 200 Amp with circuit breakers; 40 breaker panel.
+- All copper wiring to outlets and switches.
+- Two (2) outside weatherproof electric receptacles with ground fault circuit interrupters.
+- Electric baseboard heat.
+- U.L. approved AC/DC smoke and carbon monoxide detectors.
+- Standard light package: This includes all rooms getting a ceiling fan with lights.
+- All Bathrooms to have exhaust fan with lights.
+- Receptacles every 12 feet throughout house.
+- Two (2) Telephone and Two (2) cable jacks.
+- All electric to meet or exceed codes.
+
+EXTERIOR WINDOWS:
+- All windows are white Silverline by Andersen single hung that meet and exceed new energy codes. Picture frame window trim in your choice of color.
+
+FIRE PLACE:
+- Twin Builders will supply fire box and log set, customer is responsible for gas line hook-up and any charges incurred from Gas Company.
+- Zero clearance style.
+- 5’ Tall Eldorado stone facing (choice of color).
+- 8” Lime Stone mantle with 12” Lime Stone hearth.
+
+DECKING:
+- All pressure treated lumber, 16” on center with 6 x 6 posts on concrete piers.
+- 5/4” decking boards, with 2”x8” joist with 2”x10” box joist. With 2”x2” wood stock railing 4” apart and 36” high.
+- House does include gutters.
+
+DISCLAIMER:
+*OWNER MAY FEEL FREE TO UPGRADE ANY OF OUR PACKAGE ITEMS AT AN ADDITIONAL COST OF MATERIAL AND LABOR*
+ANY CHANGES OR ALTERATIONS DONE TO HOUSE AFTER START OF CONSTRUCTION WILL BE ADDITIONAL CHARGES TO HOMEOWNER
+
+--------------------------------------------------
+
+## SECTION 6: CONTACT & FREE QUOTE
+Title: Get A Free Quote
+Description: We strive to be in constant communication with our customers until the job is done. To get a free quote, or if you have questions or special requests, just drop us a line. We look forward to serving you!
+
+Business Info:
+Twin Builders
+2581 State Route 903, Albrightsville, Pennsylvania 18210, United States
+Phone: (570) 722-9282
+
+Hours:
+Monday - Friday: 8am - 3pm
+Saturday - Sunday: By Appointment Only
+
+Features Needed: 
+- Quote Form (with a button linking to this on the landing page)
+- Integrate Google Maps embed: https://www.google.com/maps?daddr=2581+State+Route+903,+Albrightsville,+Pennsylvania+18210,+United+States
